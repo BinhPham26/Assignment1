@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      body {
+        width: 90%;
+        margin: 0px auto 0px auto;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        font-size: 250%;
+        color: #0e2452;
+      }
+      header {
+        
+        display: flex;
+        height: 400px;
+        margin: 40px;
+        
+      }
+
+      table th {
+        text-align: left;
+        padding-right: 30px;
+      }
+      table td {
+        text-align: left;
+      }
+
+      .logo {
+        
+        width: 20%;
+        height: 113px;
+      }
+      .title {
+        
+        width: 80%;
+        padding-left: 100px;
+        font-size: 190%;
+        height: 100%;
+      }
+      h2 {
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+      .section {
+        margin: 40px;
+        
+        font-size: 120%;
+        height: auto;
+        font-weight: bold;
+      }
+      .section-title {
+        border-bottom: solid;
+        height: 38px;
+      }
+      .section-content {
+   
+        margin-top: 33px;
+      }
+      .column {
+        display: flex;
+        flex-wrap: wrap;
+       
+        height: auto;
+        font-weight: normal;
+        padding-top: 15px;
+        font-size: 120%;
+      }
+      .column div {
+        margin-bottom: 10px;
+
+     
+        border-bottom: groove;
+      }
+      .time {
+        width: 30%;
+      }
+      .content-right {
+        width: 70%;
+      }
+      .list {
+        margin: 2px 0px 2px 0px;
+        list-style-type: none;
+      }
+      .list li {
+        position: relative;
+      }
+      .list li::before {
+        content: "-";
+      }
+      .time1 {
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 30%;
+      }
+      h3 {
+        text-transform: uppercase;
+        margin-bottom: -20px;
+      }
+      .project {
+        margin: 40px;
+       
+        font-size: 120%;
+        height: auto;
+      }
+      .project ul {
+        margin-bottom: -20px;
+      }
+     
+      
+      .fig {
+        display: flex;
+        width:30%;
+    
+        text-align: center;
+        width:33%;
+      }
+      .fig figure {
+      text-align: center;
+      width: 145px;
+      height:180px;
+      border-radius: 20px;
+      display:flex;
+      align-items: center;
+      margin-right: 5px;
+      justify-content: center;
+      }
+      .fig img {
+        width:130px;
+        border-radius: 10px;
+      }
+     .contact {
+      
+      width:38%;
+      
+      padding-top: 20px;
+ 
+     }
+     .contact figure {
+      margin-bottom: 40px;
+     }
+     .contact img {
+      width:40px;
+      vertical-align: middle;
+      border-radius: 50%;
+      margin-right: 20px;
+      
+     }
+     
+     .project-contact {
+      display:flex;
+     }
+     
+     .other-information figure {
+      text-align: center;
+      width: 160px;
+      height:210px;
+      border-radius: 20px;
+      display:flex;
+      align-items: center;
+      margin-right: 5px;
+    }
+    
+    .other-information img {
+      width:140px;
+      border-radius: 20px;
+
+    }
+    a{
+      color:black;
+      text-decoration: none;
+    }
+    .fig figure:hover {
+      background-color: cornsilk;
+      box-shadow: 2px 2px 0 black;
+    }
+    .other-information figure:hover {
+      background-color: slateblue;
+      box-shadow: 2px 2px 0 black;
+    }
+    a:visited {
+      color:black;
+    }
+   
+   
+    </style>
+  </head>
+  <body>
+    <!--Tạo box tiêu để + logo-->
+    <header class="header">
+      <div class="title">
+        <h1>Phạm Yên Bình</h1>
+        <table style="margin-top: -20px">
+          <tr>
+            <th>Ngày sinh</th>
+            <td>26/07/2001</td>
+          </tr>
+          <tr>
+            <th>Giới tính</th>
+            <td>Nam</td>
+          </tr>
+          <tr>
+            <th>Số điện thoại</th>
+            <td>0384114607</td>
+          </tr>
+          <tr>
+            <th>Email</th>
+            <td>Binhphamyen2607@gmail.com</td>
+          </tr>
+          <tr>
+            <th>Địa chỉ</th>
+            <td>Đà Nẵng, Việt Nam</td>
+          </tr>
+        </table>
+      </div>
+      <div class="logo">
+        <img src="images/LEAD.png" alt="" style="width: 100%; height: auto" />
+        <div style="height: 140%"></div>
+      </div>
+    </header>
+
+    <!--Tạo box Mục tiêu nghề nghiệp-->
+    <div class="section">
+      <div class="section-title">
+        <h2>Mục tiêu nghề nghiệp</h2>
+      </div>
+      <div class="section-content">
+        Là một lập trình viên Fullstack, tôi đặt mục tiêu phát triển kỹ năng
+        toàn diện từ frontend đến backend, nhằm xây dựng và triển khai các ứng
+        dụng web có tính năng cao, hiệu suất tốt và đáp ứng trải nghiệm người
+        dùng tối ưu. Tôi mong muốn đóng góp vào các dự án với những giải pháp kỹ
+        thuật sáng tạo, tập trung vào việc tạo ra sản phẩm có giá trị, dễ mở
+        rộng và bảo trì. Trong dài hạn, tôi hướng tới việc trở thành một chuyên
+        gia Fullstack đáng tin cậy, có khả năng dẫn dắt đội nhóm, hỗ trợ phát
+        triển dự án từ ý tưởng đến sản phẩm hoàn chỉnh, và đóng góp tích cực vào
+        sự thành công của tổ chức.
+      </div>
+    </div>
+
+    <!--Tạo box Học vấn với 2 box lớn, 1 box chứa tiêu đề và 1 box chứa 4 box nhỏ-->
+    <div class="section">
+      <div class="section-title"><h2>Học Vấn</h2></div>
+      <!--ĐỊnh dạng box này chứa các phần tử con theo cột-->
+      <div class="column">
+        <div class="time">7/2019 - 7/2023</div>
+        <div class="content-right">
+          <strong>Cử nhân - Đại học Đông Á </strong> <br />Chuyên ngành kỹ thuật
+          ô tô<br />GPA: 3.3/4
+        </div>
+        <div class="time">8/2023 - 8/2024</div>
+        <div class="content-right">
+          <strong> Bồi dưỡng sinh viên</strong><br />Tham gia chương trình tuyển
+          chọn bồi dưỡng sinh viên, tham gia doanh nghiệp Nhật Bản. Bồi dưỡng
+          tại Nhật, đào tạo riêng để trở thành nhân viên công ty.
+        </div>
+        <div class="time">10/2024 - 4/2025</div>
+        <div class="content-right">
+          <strong>Lái ngành</strong> <br />Lái ngành chuyển sang CNTT với khát
+          vọng tìm được cơ hội mới và phát triển bản thân
+        </div>
+      </div>
+    </div>
+    <!--Tạo box cho mục Kinh nghiệm việc làm-->
+    <div class="section">
+      <div class="section-title">
+        <h2>Kinh nghiệm việc làm</h2>
+      </div>
+      <div class="column">
+        <div class="time">7/2019 - 7/2024</div>
+        <div class="content-right">
+          <strong>Giáo dục</strong>
+          <!--Tạo list cho mục Giáo dục-->
+          <ul class="list">
+            <li>
+              Độc lập giảng dạy tại các trung tâm dạy kèm Tin học và Toán học
+            </li>
+            <li>
+              Gia sư online và kèm 1-1 tại nhà cho học viên các môn Khoa học và
+              Tự nhiên
+            </li>
+            <li> Dạy tiếng Việt cho người Tây và người Nhật tại trung tâm Ngoại Ngữ Đà Nẵng và online</li>
+          </ul>
+        </div>
+        <div class="time">8/2023 - 8/2024</div>
+        <div class="content-right">
+          <strong>Tham gia chương trình Intership Nhật Bản<br /></strong>Trong
+          quá trình học tập, tôi đã có cơ hội tham gia chương trình thực tập
+          (Internship) tại Nhật Bản, một trải nghiệm quý giá giúp tôi phát triển
+          cả về chuyên môn và kỹ năng sống. Thời gian làm việc tại một công ty
+          Nhật Bản đã giúp tôi học hỏi được phong cách làm việc chuyên nghiệp,
+          kỷ luật và tinh thần trách nhiệm cao trong công việc. Bên cạnh đó, tôi
+          còn có cơ hội giao lưu, học hỏi từ các đồng nghiệp người Nhật, cũng
+          như nâng cao kỹ năng ngôn ngữ và hiểu biết về văn hóa Nhật Bản. Trải
+          nghiệm này không chỉ giúp tôi mở rộng kiến thức trong lĩnh vực của
+          mình, mà còn rèn luyện kỹ năng làm việc nhóm, khả năng thích nghi và
+          giải quyết vấn đề trong môi trường quốc tế.
+        </div>
+        <div class="time">8/2024 - 10/2024</div>
+        <div class="content-right">
+          <strong>Freelancer </strong><br />Tận dụng tiếng Nhật tốt để làm việc
+          tự do với các dự án của người Nhật, trao đổi trực tiếp về kế hoạch,
+          báo cáo, dự án bằng tiếng Nhật
+        </div>
+        <div class="time">10/2024 - Nay</div>
+        <div class="content-right">
+          <strong>Công ty X</strong><br />Fullstack Developer
+          <!--Tạo ul cho mục-->
+          <ul class="list">
+            <li>
+              Xây dựng, phát triển Website dựa trên thiết kế và yêu cầu khách
+              hàng
+            </li>
+            <li>
+              Phân tích và thiết kế Database, sử dụng các hệ quản trị CSDL
+              (MySQL,SQL Sever,Oracle...) và viết được các câu truy vấn
+            </li>
+            <li>
+              Sử dụng ngôn ngữ sever-side (Python,Java...)để xây dựng Web
+              Service
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Tạo box tương tự cho Hoạt động-->
+    <div class="section">
+      <!--Tạo box riêng cho tiêu đề-->
+      <div class="section-title">
+        <h2>Hoạt động</h2>
+      </div>
+      <!--Tạo box cho content-->
+      <div class="column">
+        <!--Tạo từng box nhỏ-->
+        <div class="time">3/2019 - 9/2019</div>
+        <div class="content-right">
+          <strong>FPT Edu Hackathon 2019</strong><br />
+          Giải 3 bảng A<br />
+          Đề tài: Trang Web về phân loại rác thải
+        </div>
+        <div class="time">10/2019 - 4/2020</div>
+        <div class="content-right">
+          <strong>Câu lạc bộ Guitar UDA</strong><br />Gặp bộ phận chuyên môn và
+          thành lập CLB Guitar cho trường Đông Á
+        </div>
+      </div>
+    </div>
+
+    <!--Tạo box cho mục Kỹ năng-->
+    <div class="section">
+      <div class="section-title"><h2>Kỹ năng</h2></div>
+      <div class="column">
+        <div class="time1">html/css</div>
+        <div class="content-right">Fundamental</div>
+        <div class="time1">javascript</div>
+        <div class="content-right">Intermediate</div>
+        <div class="time1">NodeJS</div>
+        <div class="content-right">Intermediate</div>
+        <div class="time1">Bootstrap 5</div>
+        <div class="content-right">Fundamental</div>
+      </div>
+    </div>
+
+    <!--CHƯNG CHỈ-->
+    <div class="section">
+      <div class="section-title"><h2>chứng chỉ giải thưởng</h2></div>
+      <div class="column">
+        <div class="time">2024</div>
+        <div class="content-right">CHỨNG CHỈ LẬP TRÌNH WEB FUNIX</div>
+        <div class="time">2024</div>
+        <div class="content-right">CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT FUNIX</div>
+      </div>
+    </div>
+
+    <!--Sở thích-->
+    <div class="section">
+      <div class="section-title"><h2>Sở thích</h2></div>
+      <div>
+        <ul style="margin-top: 10px">
+          <li>Âm nhạc</li>
+          <li>Chơi game</li>
+          <li>Du lịch</li>
+          <li>Nấu ăn</li>
+        </ul>
+      </div>
+    </div>
+    <!--DỰ ÁN -->
+    <div class="project">
+      <div class="section-title"><h2>Dự án</h2></div>
+      <div>
+        <h3>Trang web quản lý thú cưng</h3>
+        <p>2023</p>
+
+        <ul>
+          <li><strong>Vị trí:</strong> Developer.</li>
+          <li>
+            <strong>Mô tả:</strong>Ứng dụng giúp quản lý thông tin của thú cưng
+            như:Cân nặng, giống,tình trạng tiêm chủng...Bao gồm các chức năng
+            thêm, sửa và xóa.
+          </li>
+
+          <li>
+            <strong>Nhiệm vụ:</strong>Phát triển, tối ưu code và xử lý lỗi.
+          </li>
+          <li><strong>Công nghệ:</strong>HTML, CSS</li>
+        </ul>
+        <br />
+        <h3>Trang web xem tin tức</h3>
+        <p>2023</p>
+
+        <ul>
+          <li><strong>Vị trí:</strong> Developer.</li>
+          <li>
+            <strong>Mô tả:</strong>Trang Web xem tin tức từ nhiều nguồn khác
+            nhau, người dùng cũng có thể tìm kiếm tin tức theo từ khóa.
+          </li>
+          <li>
+            <strong>Nhiệm vụ:</strong>Phát triển, tối ưu code và xử lý lỗi.
+          </li>
+          <li><strong>Công nghệ:</strong>HTML, CSS</li>
+        </ul>
+        <br />
+        <h3>Công việc cá nhân</h3>
+        <p>2023</p>
+
+        <ul>
+          <li><strong>Vị trí:</strong> Developer.</li>
+          <li>
+            <strong>Mô tả:</strong>Trang Web CV cá nhân online. Gồm các thông
+            tin cá nhân cũng như nghề nghiệp.
+          </li>
+          <li>
+            <strong>Nhiệm vụ:</strong>Phát triển, tối ưu code và xử lý lỗi.
+          </li>
+          <li><strong>Công nghệ:</strong>HTML, CSS</li>
+        </ul>
+        <br />
+      </div>
+    </div>
+
+    <!--Box Liên hệ-->
+    <div class="project">
+      <div class="section-title"><h2>liên hệ</h2></div>
+      <div class="project-contact">
+      <div class="fig">
+        <figure>
+          <a href="https://www.facebook.com/vy.khang.3762"
+            ><img src="images/Face.png" alt="" /><br />
+            <figcation>Facebook.com</figcation></a>
+        </figure>
+        <figure>
+          <a href="https://https://github.com/dashboard"
+            ><img src="images/Git.webp" alt="" /><br />
+            <figcation>Github.com</figcation></a>
+        </figure></div>
+        <div class="contact">
+          <figure>
+            <img src="images/Gmail.png" alt=""><figcation>Binhphamyen2607@gmail.com</figcation>
+          </figure>
+          <figure>
+            <img src="images/Zalo.png" alt=""><figcation>0384114607</figcation>
+          </figure>
+        </div>
+        
+        
+        <div class="other-information"><h3>Thông tin khác:</h3>
+          <div style="display:flex;margin-top: 16px;;">
+          <figure>
+          <a href="https://www.facebook.com/daihocdonga/"><img src="images/DongA.png" alt="" /><br />
+          <figcation>Trường Đại học Đông Á</figcation>
+        </figure></a>
+        <figure>
+          <a href="https://funix.edu.vn/"
+            ><img src="images/Funix.png" alt="" /><br />
+            <figcation>Trung tâm FUNiX đang theo học</figcation></a
+          >
+        </figure></div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
